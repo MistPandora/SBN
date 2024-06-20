@@ -1,0 +1,124 @@
+.titleContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 50px 75px;
+  flex-wrap: wrap;
+
+}
+
+.logoContainer {
+  width: 200px;
+}
+
+.logoContainer img {
+  width: 100%;
+  object-fit: contain;
+}
+
+.main {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 75px;
+  width: 100%;
+  max-width: 1600px;
+  margin-top: 100px;
+}
+
+.rightContainer {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+  height: 100%;
+  max-width: 450px;
+}
+
+.inputsContainer {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  width: 50%;
+}
+
+.rangeLabel {
+  margin-bottom: 25px;
+}
+
+.rangeTrack {
+  height: 20px;
+  min-width: 300px;
+  background-color: #2e3f7b;
+  border-radius: 5px;
+}
+
+.rangeThumb {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 30px;
+  width: 40px;
+  border: 1px solid #1faa1fa3;
+  background-color: #0e152d;
+  cursor: pointer !important;
+  outline: none;
+  border-radius: 5px;
+  transition: box-shadow .2s ease-in-out;
+
+}
+
+.rangeThumb:hover {
+  box-shadow: 0 0 4px var(--primary-border-color);
+}
+
+.rangeIcon * {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  transition: color .2s ease-in-out;
+}
+
+.radiosContainerBorder {
+  position: relative;
+  border-radius: 25px;
+  padding: 2px;
+  background-color: transparent;
+}
+
+.radiosContainerBorder::after {
+  content: '';
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  border-radius: 10px;
+  padding: 2px;
+  background-image: radial-gradient(circle, var(--primary-border-color) 50%, var(--secondary-border-color));
+}
+
+.radiosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-wrap: wrap;
+  row-gap: 25px;
+  padding: 20px 0;
+  border-radius: 8px;
+  background-color: #0e152d;
+}
+
+
+@media screen and (max-width: 992px) {
+  .inputsContainer {
+    width: 75%;
+  }
+
+  .rightContainer {
+    width: 75%;
+  }
+}

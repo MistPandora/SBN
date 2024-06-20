@@ -1,0 +1,72 @@
+@keyframes borderAnimation {
+  to {}
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  width: calc(50% - 25px);
+  row-gap: 15px;
+}
+
+.container label {
+  font-size: 18px;
+}
+
+.inputBorder {
+  position: relative;
+  border-radius: 25px;
+  padding: 2px;
+  background-color: transparent;
+  overflow: hidden;
+}
+
+.inputBorder::after {
+  content: '';
+  display: block;
+  z-index: -1;
+  position: absolute;
+  top: -200px;
+  right: 0;
+  bottom: -200px;
+  left: 0;
+  background-image: linear-gradient(to bottom right, var(--primary-border-color), var(--secondary-border-color) 80%);
+  transition: transform .6s linear;
+}
+
+.inputBorder:focus-within:after {
+  transform: rotate(180deg);
+}
+
+.inputBorder input {
+  width: 100%;
+  outline: none;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 15px;
+  font-size: 15px;
+  background: var(--main-bg-color);
+}
+
+.label {
+  display: flex;
+  width: 100%;
+  flex-shrink: 0;
+}
+
+.infoBlock {
+  display: flex;
+  align-items: center;
+  margin-left: 10px;
+  padding: 0 5px;
+  font-size: 10px;
+  background-color: var(--secondary-bg-color);
+  color: var(--primary-text-color);
+  border-radius: 8px;
+}
+
+@media screen and (max-width: 630px) {
+  .infoBlock {
+    display: none;
+  }
+}

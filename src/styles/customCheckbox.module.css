@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    column-gap: 15px;
+    width: 75%;
+}
+
+.label {
+    color: var(--primary-color)
+}
+
+.radio {
+    display: none;
+    width: 0;
+    height: 0;
+    opacity: 0;
+    cursor: pointer;
+}
+
+.customRadio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    border: 1px solid var(--secondary-bg-color);
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.customRadio:hover {
+    border: 2px solid var(--secondary-bg-color);
+}
+
+.customRadio.checked {
+    background-color: var(--secondary-bg-color);
+}
+
+.checkIcon {
+    font-size: 18px;
+}
