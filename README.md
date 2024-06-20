@@ -2,7 +2,7 @@ Calculateur de Salaire Brut en Net.
 
 ## Pour y accéder directement
 
-Voici l'URL : 
+Voici l'URL : https://sbn-one.vercel.app
 
 ## Pour le lancer localement
 
