@@ -27,21 +27,6 @@ export default function Home() {
   const [checkedRadioValue, setCheckedRadioValue] = useState<string>("22");
 
   useEffect(() => {
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('/sw.js').then(
-          (registration) => {
-            console.log('Service Worker registered with scope:', registration.scope);
-          },
-          (error) => {
-            console.log('Service Worker registration failed:', error);
-          }
-        );
-      });
-    }
-  }, []);
-
-  useEffect(() => {
     setInputs(changingRateValues(calculateValuesWithWorktime(originalValues, worktime, inputs), checkedRadioValue));
   }, [worktime, originalValues, checkedRadioValue]);
 
