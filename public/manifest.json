@@ -4,7 +4,6 @@
     "description": "Une application servant à convertir les taux brut/net",
     "start_url": "/",
     "display": "standalone",
-    "background_color": "#ffffff",
     "theme_color": "#0e152d",
     "icons": [
         {

@@ -17,6 +17,8 @@ export default function RootLayout({
     <html>
       <head>
         <link rel="stylesheet" href={roboto} />
+        <link rel="manifest" href="/manifest.json" />
+        <link rel="icon" href="/icons/logo.png" />
       </head>
       <body>{children}</body>
     </html>
