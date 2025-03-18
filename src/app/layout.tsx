@@ -20,6 +20,8 @@ export default function RootLayout({
         <link rel="stylesheet" href={roboto} />
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/icons/logo.png" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="format-detection" content="telephone=no" />
       </head>
       <body>{children}</body>
     </html>

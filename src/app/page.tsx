@@ -73,6 +73,8 @@ export default function Home() {
         handleTextInputChange={handleTextInputChange}
         value={value}
         infoBlock={infoBlock}
+        pattern="[0-9]*"
+        inputMode="numeric"
       />
     )
   });
