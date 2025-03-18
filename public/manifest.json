@@ -1,0 +1,16 @@
+{
+    "name": "Salaire Brut en Net",
+    "short_name": "SBN",
+    "description": "Une application servant à convertir les taux brut/net",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#0e152d",
+    "icons": [
+        {
+            "src": "/icons/logo.png",
+            "sizes": "105x105",
+            "type": "image/png"
+        }
+    ]
+}
